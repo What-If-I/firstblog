@@ -48,7 +48,7 @@ class Handler(webapp2.RequestHandler):
 
 class MainPage(Handler):
     def get(self):
-        posts = Posts.all().order('-created').fetch(limit=5)
+        posts = Posts.all().order('-created').fetch(limit=10)
         self.render('index.html', posts=posts)
 
 
