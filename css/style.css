@@ -1,0 +1,16 @@
+.error {
+    color: red;
+}
+
+body {
+    margin: 0 auto;
+    width: 30%;
+}
+
+textarea {
+    font-family: monospace;
+}
+
+hr {
+    margin: 20px auto;
+}

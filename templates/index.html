@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}My glorious blog{% endblock %}
+
+{% block content %}
+
+    <a href="/blog/newpost"><button>New</button></a>
+
+
+    {% for post in posts %}
+    <h2>{{ post.title }} created on {{ post.created }}</h2>
+    <hr>
+    <p>{{ post.content }}</p>
+    <br>
+    {% endfor %}
+
+{% endblock content %}
